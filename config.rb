@@ -46,3 +46,26 @@ page '/*.txt', layout: false
 # end
 
 activate :livereload
+
+# Deploy
+# https://github.com/middleman-contrib/middleman-deploy
+
+# If you use a remote name, you must first add it using git remote add. Run git
+# remote -v to see a list of possible remote names. If you use a git url, it
+# must end with '.git'.
+
+# Afterwards, the build directory will become a git repo.
+
+# If you use the force push strategy, this branch will be created on the remote
+# if it doesn't already exist. But if you use the submodule strategy, you must
+# first initialize build folder as a submodule. See git submodule add
+# documentation.
+
+activate :deploy do |deploy|
+  deploy.method = :git
+  # Optional Settings
+  # deploy.remote   = 'custom-remote' # remote name or git url, default: origin
+  # deploy.branch   = 'custom-branch' # default: gh-pages
+  # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
+  # deploy.commit_message = 'custom-message'      # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
+end
