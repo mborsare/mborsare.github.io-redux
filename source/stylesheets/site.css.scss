@@ -1,0 +1,86 @@
+@import "variables";
+@import "animations";
+@import "breakpoint";
+@import "breakpoints";
+@import "fonts";
+@import "custom-cursor";
+@import "links";
+
+html {
+  @include breakpoint($breakpoint-medium-up) {
+    font-size: 20px;
+  }
+  @include breakpoint($breakpoint-large-up) {
+    font-size: 24px;
+  }
+}
+
+body {
+  padding: $base-spacing;
+  background-color: $base-background-color;
+  color: white;
+  font-family: $base-font-family;
+  line-height: 1.5;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  margin: $large-spacing auto;
+  color: $bright-color;
+  font-weight: 400;
+  font-family: "UniversLTStd-BoldEx";
+}
+
+h2 {
+  color: $bright-color;
+  font-size: $small-font-size;
+  font-family: "UniversLTStd-BlackEx";
+}
+
+p {
+  margin-bottom: $medium-spacing;
+  font-size: 1.25rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+
+  @include breakpoint($breakpoint-large-up) {
+    max-width: 1100px;
+  }
+}
+
+header {
+  display: flex;
+  font-size: $small-font-size;
+  font-family: "UniversLTStd-BoldEx";
+
+  justify-content: space-around;
+
+  span:first-child {
+    flex: 1;
+  }
+}
+
+.wave-emoji {
+  display: inline-block;
+}
+
+.foo-parent {
+  position: relative;
+}
+
+.foo {
+  position: absolute;
+  top: 75%;
+  left: 15%;
+  max-height: 0;
+  transition: max-height 0.3s;
+
+  .foo-parent:hover & {
+    max-height: 600px;
+  }
+}

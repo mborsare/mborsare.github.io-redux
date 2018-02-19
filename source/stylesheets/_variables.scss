@@ -1,0 +1,21 @@
+// Typography
+$base-font-family: "UniversLTStd-Ex";
+$small-font-size: 0.6rem;
+
+// Spacing
+$base-spacing: 1rem;
+$medium-spacing: $base-spacing * 3;
+$large-spacing: $medium-spacing * 2;
+
+// Colors
+$base-background-color: #316d76;
+$bright-color: #50E3C2;
+$action-color: white;
+
+// Timing
+$base-duration: 0.3s;
+$base-timing: ease-in-out;
+
+// Anchors
+$focus-outline: blue;
+$focus-outline-offset: 3px;

@@ -1,0 +1,28 @@
+
+a {
+  color: $action-color;
+  text-decoration: none;
+  transition: color $base-duration $base-timing;
+
+  text-decoration-skip: ink;
+
+  &::after {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    bottom: -4px;
+    left: -8px;
+    z-index: -1;
+    background-color: lighten(#316d76, 2%);
+    content: "";
+  }
+
+  &:hover {
+    color: darken($action-color, 25%);
+  }
+
+  &:focus {
+    outline: $focus-outline;
+    outline-offset: $focus-outline-offset;
+  }
+}
