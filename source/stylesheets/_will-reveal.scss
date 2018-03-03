@@ -1,0 +1,15 @@
+.will-reveal {
+  opacity: 0;
+  transition: transform $base-duration, opacity $fast-duration;
+  transform: scale(0);
+  transform-origin: top left;
+
+  .revealed & {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.follow-cursor {
+  position: fixed;
+}

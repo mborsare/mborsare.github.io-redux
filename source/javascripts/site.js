@@ -1,12 +1,16 @@
 // This is where it all goes :)
 
-$(document).ready(function(){
-  $(".foo-parent").hover(function(){
-    console.log("did this work?");
-    $("body").css("background-color","red");
-  });
+$(document).ready(function() {
 
-  $(".foo-parent").mouseleave(function(){
-    $("body").css("background-color","white");
+  $('.introduction').hover(function() {
+    $(this).toggleClass('revealed');
+
+    $(this).on('mousemove', function(e) {
+      $('.follow-cursor').css({
+        left: e.pageX,
+        top: e.pageY
+      });
+    });
+
   });
-});​
+});

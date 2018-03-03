@@ -5,13 +5,16 @@
 @import "fonts";
 @import "custom-cursor";
 @import "links";
+@import "will-reveal";
 
 html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   @include breakpoint($breakpoint-medium-up) {
-    font-size: 20px;
+    font-size: 19px;
   }
   @include breakpoint($breakpoint-large-up) {
-    font-size: 24px;
+    font-size: 23px;
   }
 }
 
@@ -21,9 +24,6 @@ body {
   color: white;
   font-family: $base-font-family;
   line-height: 1.5;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
@@ -41,7 +41,7 @@ h2 {
 
 p {
   margin-bottom: $medium-spacing;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 
 .container {
@@ -67,20 +67,4 @@ header {
 
 .wave-emoji {
   display: inline-block;
-}
-
-.foo-parent {
-  position: relative;
-}
-
-.foo {
-  position: absolute;
-  top: 75%;
-  left: 15%;
-  max-height: 0;
-  transition: max-height 0.3s;
-
-  .foo-parent:hover & {
-    max-height: 600px;
-  }
 }

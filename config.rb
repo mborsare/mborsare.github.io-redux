@@ -37,15 +37,27 @@ page '/*.txt', layout: false
 #   end
 # end
 
+# Development
+configure :development do
+  activate :livereload
+end
+
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end
+configure :build do
+  activate :minify_css
+  activate :minify_javascript
+  activate :minify_html
+  activate :gzip
 
-activate :livereload
+  # https://coderwall.com/p/xcvxga/optimizing-single-page-middleman-website
+  # activate :minify_css, inline: true
+  # activate :minify_javascript, inline: true
+  # activate :minify_html
+  # activate :asset_hash
+  # activate :gzip
+end
 
 # Deploy
 # https://github.com/middleman-contrib/middleman-deploy
