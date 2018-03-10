@@ -8,31 +8,31 @@
 // @import "will-reveal";
 
 html {
+  background-color: $base-background-color;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   @include breakpoint($breakpoint-medium-up) {
-    font-size: 20px;
+    // font-size: 18px;
   }
   @include breakpoint($breakpoint-large-up) {
-    font-size: 24px;
+    // font-size: 22px;
   }
 }
 
 body {
   padding: $base-spacing;
-  background-color: $base-background-color;
-  color: white;
+  color: $bright-color;
+  // color: white;
   font-family: $base-font-family;
   // line-height: 1.5;
 }
 
 h1 {
-  margin: $large-spacing auto;
-  color: $bright-color;
-  font-weight: 400;
+  // margin: $large-spacing auto;
   // font-size: 3rem;
   // font-family: 'Noticia Text', serif;
-  // font-family: "UniversLTStd-BoldEx";
+  font-family: "UniversLTStd-BlackEx";
 }
 
 h2 {
@@ -52,7 +52,7 @@ p {
   max-width: 800px;
 
   @include breakpoint($breakpoint-large-up) {
-    max-width: 1100px;
+    // max-width: 1100px;
   }
 }
 
@@ -66,16 +66,4 @@ header {
   span:first-child {
     flex: 1;
   }
-}
-
-.wave-emoji {
-  display: inline-block;
-}
-
-// ul {
-//   list-style: square outside none;
-// }
-
-.introduction {
-  font-family: "UniversLTStd-BoldEx";
 }
