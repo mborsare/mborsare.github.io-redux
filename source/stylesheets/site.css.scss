@@ -1,20 +1,20 @@
 @import "variables";
-@import "animations";
+// @import "animations";
 @import "breakpoint";
 @import "breakpoints";
 @import "fonts";
-@import "custom-cursor";
-@import "links";
-@import "will-reveal";
+// @import "custom-cursor";
+// @import "links";
+// @import "will-reveal";
 
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   @include breakpoint($breakpoint-medium-up) {
-    font-size: 19px;
+    font-size: 20px;
   }
   @include breakpoint($breakpoint-large-up) {
-    font-size: 23px;
+    font-size: 24px;
   }
 }
 
@@ -23,25 +23,28 @@ body {
   background-color: $base-background-color;
   color: white;
   font-family: $base-font-family;
-  line-height: 1.5;
+  // line-height: 1.5;
 }
 
 h1 {
   margin: $large-spacing auto;
   color: $bright-color;
   font-weight: 400;
-  font-family: "UniversLTStd-BoldEx";
+  // font-size: 3rem;
+  // font-family: 'Noticia Text', serif;
+  // font-family: "UniversLTStd-BoldEx";
 }
 
 h2 {
   color: $bright-color;
+  text-transform: uppercase;
+  letter-spacing: 0.0625em;
   font-size: $small-font-size;
   font-family: "UniversLTStd-BlackEx";
 }
 
 p {
   margin-bottom: $medium-spacing;
-  font-size: 1.125rem;
 }
 
 .container {
@@ -67,4 +70,12 @@ header {
 
 .wave-emoji {
   display: inline-block;
+}
+
+// ul {
+//   list-style: square outside none;
+// }
+
+.introduction {
+  font-family: "UniversLTStd-BoldEx";
 }
