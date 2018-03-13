@@ -2,33 +2,33 @@
 title: Mike Borsare
 ---
 
-<main class="container relative">
-  <h1 class="pv4 pv6-ns f2">
+<main class="container">
+  <h1 class="pv4 pv5-ns">
     <div class="introduction white ttu tracked f6 f3-ns pb3">
-      Hello! I’m, Mike Borsare.
+      Hello! I’m, Mike Borsare
     </div>
     <div class="apollo f1-ns">
-      I’m a Product Designer with front-end chops. I live in Boston and work at thoughtbot.
+      I’m a Sr. Product Designer with front-end chops. I live in Boston and work at
+      <%= link_to "thoughtbot", "//www.thoughtbot.com" %>.
     </div>
   </h1>
-  <!-- <img class="absolute o-10 introduction-image" src="images/me.png" alt="Pictures of Mike Borsare"> -->
+  <img class="fixed o-10 introduction-image" src="images/me.png" alt="Pictures of Mike Borsare">
 
-  <div class="pv3 flex-ns">
-    <section class="w-50-ns mr3-ns">
+  <div class="pv2">
+    <section>
       <h2 class="white">
         This is what I do at work
       </h2>
       <ul class="pl0 lh-copy">
         <li>I create and implement strong, memorable products.</li>
-        <li>
-          I strike a balance between excellent visual design and intuitive user experience.</li>
+        <li>I strike a balance between excellent visual design and intuitive user experience.</li>
         <li>I create and improve design systems.</li>
         <li>I mentor young designers.</li>
         <li>I ask why a whole bunch.</li>
       </ul>
     </section>
 
-    <section class="w-50-ns mt4 mt0-ns">
+    <section class="mt4">
       <h2 class="white">
         This is what I do outside of work
       </h2>
@@ -42,58 +42,68 @@ title: Mike Borsare
       </ul>
     </section>
   </div>
-  <section class="pv4 pv6-ns">
-    <h2 class="ttu track white pb3">Wait, What is it you do again?</h2>
-    <div class="w-100 cf flex-ns flex-wrap f4">
-      <div class="w-50-ns flex flex-auto">
-        <div class="outline pa4">
-          <h2 class="white f6">
-            Product design
-          </h2>
-          It’s a combination of user interface, user experience, graphic design, and interaction
-        </div>
+
+
+  <section class="pv4 pv5-ns">
+    <h2 class="ttu track white pb3">Wait, What is Product Design?</h2>
+    <div class="apollo f2-ns mb1 pb4">
+      It’s a combination of user interface, user experience, graphic design, and interaction
+    </div>
+
+    <div class="flex-ns flex-wrap justify-between lh-copy">
+      <div class="w-50-ns pa4 bg-light-green white">
+        <h2 class="f6">
+          User Interface
+        </h2>
+        The space where interactions between humans and machines occur.
+        <p class="mt3 ma0 pa0 tr sans-serif f6">Source: Wikipedia ↗</p>
+      </div>
+      <div class="w-50-ns pa4 bg-red white">
+        <h2 class="f6">
+          User Experience
+        </h2>
+        foo bar baz
+        <p class="mt3 ma0 pa0 tr sans-serif f6">Source: Wikipedia ↗</p>
       </div>
 
-      <div class="w-50-ns flex flex-auto">
-        <div class="pa4 bg-light-green white">
-          <h2 class="f6">
-            User Interface & Experience
-          </h2>
-          The space where interactions between humans and machines occur.
-          <p class="mt3 ma0 pa0 tr sans-serif f6">Source: Wikipedia ↗</p>
-        </div>
+      <div class="w-50-ns pa4 bg-lavender white">
+        <h2 class="f6 white o-50">
+          Graphic design
+        </h2>
+        The art and practice of planning and projecting ideas and experiences with visual and textual content.
+        <p class="mt3 ma0 pa0 tr sans-serif f6">Source: AIGA ↗</p>
       </div>
 
-      <div class=" w-50-ns flex flex-auto">
-        <div class="pa4 bg-lavender white">
-          <h2 class="f6 white o-50">
-            Graphic design
-          </h2>
-          The art and practice of planning and projecting ideas and experiences with visual and textual content. Source: AIGA ↗
-        </div>
-      </div>
-
-      <div class="w-50-ns flex flex-auto">
-        <div class="pa4 bg-near-white">
-          <h2 class="f6">
-            Interaction
-          </h2>
-          The practice of empowering the user to achieve their objective(s) in the best way possible. Source: Wikipedia ↗
-        </div>
+      <div class="w-50-ns pa4 bg-near-white">
+        <h2 class="f6">
+          Interaction
+        </h2>
+        The practice of empowering the user to achieve their objective(s) in the best way possible.
+        <p class="mt3 ma0 pa0 tr sans-serif f6">Source: Wikipedia ↗</p>
       </div>
     </div>
   </section>
-  <h2 class="white pt4">Hyperlinks!</h2>
-  <ul class="list pl0">
-    <li class="pv3 pv4-ns bb b--black-10">
-      <b class="db f3 mb1">Dribbble</b>
-      <span class="f5 db lh-copy measure">
-        The positioning of text within the page margins. Alignment can be flush left, flush right, justified, or centered. Flush left and flush right are sometimes referred to as left justified and right justified.</span>
-    </li>
-    <li class="pv3 pv4-ns bb b--black-10">
-      <b class="db f3 mb1">Everywhere else</b>
-      <span class="f5 db lh-copy measure">
-        The positioning of text within the page margins. Alignment can be flush left, flush right, justified, or centered. Flush left and flush right are sometimes referred to as left justified and right justified.</span>
-    </li>
-  </ul>
 </main>
+
+<aside class="bg-white">
+  <div class="container">
+    <h2 class="pt3">Still reading?</h2>
+    <ul class="list pl0">
+      <li class="pv3 pv4-ns bb b--black-10">
+        <b class="db f3 mb1">Dribbble</b>
+        <span class="f5 db lh-copy measure">
+          The positioning of text within the page margins. Alignment can be flush left, flush right, justified, or centered. Flush left and flush right are sometimes referred to as left justified and right justified.</span>
+      </li>
+      <li class="pv3 pv4-ns bb b--black-10">
+        <b class="db f3 mb1">Everywhere else</b>
+        <span class="f5 db lh-copy measure">
+          The positioning of text within the page margins. Alignment can be flush left, flush right, justified, or centered. Flush left and flush right are sometimes referred to as left justified and right justified.</span>
+      </li>
+      <li class="pv3 pv4-ns">
+        <b class="db f3 mb1">Dribbble</b>
+        <span class="f5 db lh-copy measure">
+          The positioning of text within the page margins. Alignment can be flush left, flush right, justified, or centered. Flush left and flush right are sometimes referred to as left justified and right justified.</span>
+      </li>
+    </ul>
+  </div>
+</aside>

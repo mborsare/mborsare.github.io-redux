@@ -4,36 +4,33 @@
 @import "breakpoints";
 @import "fonts";
 // @import "custom-cursor";
-// @import "links";
+@import "links";
 // @import "will-reveal";
 
 html {
-  background-color: $base-background-color;
-
+  background-color: $bright-color;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   @include breakpoint($breakpoint-medium-up) {
     // font-size: 18px;
   }
   @include breakpoint($breakpoint-large-up) {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
 body {
-  padding: $base-spacing;
+  background-color: $base-background-color;
   color: $bright-color;
-  // color: white;
-  // font-family: $base-font-family;
-  // line-height: 1.5;
-  font-family: "ApolloMTStd";
+  font-family: $base-font-family;
+  // font-family: "ApolloMTStd";
 }
 
 h1 {
   // margin: $large-spacing auto;
   // font-size: 3rem;
   // font-family: 'Noticia Text', serif;
-  font-family: "UniversLTStd-BlackEx";
+  font-weight: normal;
 }
 
 h2 {
@@ -50,10 +47,10 @@ p {
 
 .container {
   margin: 0 auto;
-  max-width: 800px;
+  padding: $medium-spacing;
+  max-width: 960px;
 
   @include breakpoint($breakpoint-large-up) {
-    max-width: 1100px;
   }
 }
 
@@ -69,10 +66,14 @@ header {
   }
 }
 
+.introduction {
+  font-family: "UniversLTStd-BlackEx";
+}
+
 .introduction-image {
   top: 0;
   right: -50%; //-400px
-  transform: rotate(5deg);
+  // transform: rotate(5deg);
 
   @include breakpoint($breakpoint-large-up) {
     right: -25%;

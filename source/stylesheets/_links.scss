@@ -1,24 +1,13 @@
-
 a {
+  border-bottom: 1px solid rgba($action-color, 0.25);
   color: $action-color;
+  padding-bottom: 0.25rem;
   text-decoration: none;
+  text-decoration-skip: ink;
   transition: color $base-duration $base-timing;
 
-  text-decoration-skip: ink;
-
-  &::after {
-    position: absolute;
-    top: -8px;
-    right: -8px;
-    bottom: -4px;
-    left: -8px;
-    z-index: -1;
-    background-color: lighten(#316d76, 2%);
-    content: "";
-  }
-
   &:hover {
-    color: darken($action-color, 25%);
+    color: lighten($action-color, 25%);
   }
 
   &:focus {
