@@ -16,7 +16,7 @@ html {
     // font-size: 18px;
   }
   @include breakpoint($breakpoint-large-up) {
-    // font-size: 22px;
+    font-size: 20px;
   }
 }
 
@@ -24,8 +24,9 @@ body {
   padding: $base-spacing;
   color: $bright-color;
   // color: white;
-  font-family: $base-font-family;
+  // font-family: $base-font-family;
   // line-height: 1.5;
+  font-family: "ApolloMTStd";
 }
 
 h1 {
@@ -52,7 +53,7 @@ p {
   max-width: 800px;
 
   @include breakpoint($breakpoint-large-up) {
-    // max-width: 1100px;
+    max-width: 1100px;
   }
 }
 
@@ -66,4 +67,28 @@ header {
   span:first-child {
     flex: 1;
   }
+}
+
+.introduction-image {
+  top: 0;
+  right: -50%; //-400px
+  transform: rotate(5deg);
+
+  @include breakpoint($breakpoint-large-up) {
+    right: -25%;
+    width: 50%;
+  }
+}
+
+.bg-lavender {
+  background-color: #A9C8FF;
+}
+
+ul {
+  font-family: "UniversLTStd";
+}
+
+.apollo {
+  font-weight: normal;
+  font-family: "ApolloMTStd", serif;
 }
